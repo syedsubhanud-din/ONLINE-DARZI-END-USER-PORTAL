@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&display=swap");
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.main_product_div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.inner_product_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.content {
+    width: 900px;
+    background: white;
+    display: flex;
+    justify-content: start;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px lightgray;
+}
+
+/* Left Side:Start */
+.left {
+    display: block;
+    height: fit-content;
+    min-width: 250px;
+}
+
+.left .product_img {
+    height: 250px;
+    width: 230px;
+    margin: 10px;
+    border-radius: 5px;
+    background: url("https://i.pinimg.com/550x/e3/3b/5f/e33b5f136f84e44354f9f5977c8107ff.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.product_details {
+    text-align: left;
+    margin: 0 10px 10px;
+    padding: 5px;
+}
+
+.product_details .title {
+    font-size: 1.3em;
+    color: rgb(99, 99, 99);
+    font-weight: 900;
+}
+
+.product_details .discription {
+    margin-top: 2px;
+    font-size: 0.8em;
+    color: gray;
+}
+
+.product_details .price {
+    margin-top: 4px;
+    font-size: 1.1em;
+    font-weight: 600;
+    white-space: pre;
+}
+
+.product_details .price span {
+    font-weight: 500;
+}
+
+.product_details .price .price_original {
+    text-decoration: line-through;
+    font-size: 0.7em;
+    font-weight: 400;
+    color: gray;
+}
+
+.product_details .price .offer {
+    color: #03ac13;
+    font-weight: 600;
+}
+
+.product_details .other {
+    font-size: 0.8em;
+    color: grey;
+}
+
+/* Left Side:End */
+
+/* Right Side:Start */
+.right {
+    display: block;
+}
+
+.right .product_description {
+    text-align: left;
+    margin: 30px 20px;
+}
+
+.product_description h4 {
+    font-size: 0.9em;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.product_description p {
+    font-size: 0.8em;
+    color: grey;
+    margin-bottom: 15px;
+}
+
+.product_description .highlight {
+    color: rgb(99, 99, 99);
+    font-weight: 900;
+}
+
+.product_description .special {
+    font-size: 0.85em;
+}
+
+.add_product_button_div {
+    width: 100%;
+}
+
+.add_product_button_div button {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 30px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid rgb(27, 110, 206);
+    color: rgb(27, 110, 206);
+    cursor: pointer;
+}
+
+.add_product_button_div button:hover {
+    background-color: rgb(27, 110, 206);
+    color: white;
+}
+
+/* Right Side:End */
+
+
+
+
+
+
+
+
+
+
+.main_add_product_div {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 99;
+    display: none;
+}
+
+.inner_add_product_div {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(211, 211, 211, 0.479);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_popup_box_add_product_div {
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    background-image: url(../../Assets/card_background_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px gray;
+    padding: 20px;
+}
+
+.main_popup_box_add_product_header_div {
+    width: 100%;
+    height: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.main_popup_box_add_product_header_div div i {
+    font-size: 25px;
+    cursor: pointer;
+    color: red;
+}
+
+.main_popup_box_add_product_body_div {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main_popup_box_add_product_body_inner_div1 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input_field_div {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px 10px;
+}
+
+.input_field_div label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.input_field_div input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding: 0px 10px;
+    background-color: rgba(255, 255, 255, 0.589);
+    border-bottom: 2px solid lightgray;
+}
+
+.input_field_div input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.input_field_div textarea {
+    width: 100%;
+    height: 100px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.589);
+    border-left: 2px solid lightgray;
+    border-right: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    padding: 10px;
+}
+
+.input_field_div textarea:focus {
+    outline: none;
+    border: none;
+    border-left: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.add_product_button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.add_product_button button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #03a07b;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* Responsiveness:Start */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        border-radius: 0px;
+    }
+
+    section {
+        width: 100% !important;
+    }
+
+    .product_img {
+        width: calc(100vw - 6%) !important;
+        height: 350px !important;
+    }
+
+    h4.title {
+        font-size: 1em !important;
+    }
+
+    p {
+        width: 90%;
+    }
+
+    p.discription {
+        font-size: 0.7em !important;
+    }
+
+    p.other {
+        font-size: 0.7em !important;
+    }
+}
+
+/* Responsiveness:End */
